@@ -1,0 +1,9 @@
+.env
+./node_modules
+*/node_modules
+google.json
+./.env
+/.env
+*/.env
+./google.json
+/google.json
