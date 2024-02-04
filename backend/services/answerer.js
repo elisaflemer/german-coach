@@ -10,6 +10,8 @@ const context = {
 const conversationHistory = [context];
 
 
+
+
 async function getAnswer(question) {
     question = question + " Correct any mistakes in grammar or expressions. If any phrases sound weird or non-native/non-fluent, explain how they could say that naturally in German. If any words/phrases/expressions are in another language, explain how they could say that naturally in German. Also don't speak too much, be concise. Answer in German and keep the conversation going."
   let fullQuestion = {
@@ -30,6 +32,7 @@ async function getAnswer(question) {
   };
 
   console.log(fetchOptions.body)
+  console.log(conversationHistory)
 
   try {
     const response = await fetch(
